@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Blog
+title: 杂
+permalink: /za/
 ---
 
 <div class="posts">
-  {% assign blog_posts = site.categories.blog | sort: 'date' | reverse %}
-{% for post in blog_posts %}
+  {% assign za_posts = site.categories.za | sort: 'date' | reverse %}
+{% for post in za_posts %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">

@@ -1,5 +1,5 @@
-title:               Celeste
-url:                 https://nicoelayda.github.io
+title:               Mie
+url:                 https://miexuan.github.io
 baseurl:             ""
 
 markdown:            kramdown
@@ -12,16 +12,16 @@ paginate:            5
 paginate_path:       /blog/:num
 
 blog:
-  truncated_preview: false
+  truncated_preview: true
 
 sass:
   sass_dir:          _sass
   style:             :compressed
 
 author:
-  name:              Nico Elayda
-  url:               nicoelayda.github.io
-  email:             nico@elayda.com
+  name:              miexuan
+  url:               miexuan.github.io
+  email:             wongqingxuan@163.com
 
 plugins:
   - jekyll-coffeescript
