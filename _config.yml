@@ -3,6 +3,13 @@ url:                 https://miexuan.github.io
 baseurl:             ""
 
 markdown:            kramdown
+kramdown:
+  math_engine: mathjax  # 关键：启用 mathjax
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+
 highlighter:         rouge
 
 exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
