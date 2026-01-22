@@ -1,11 +1,17 @@
 ---
 layout: default
-title: Blog
+title: box
+permalink: /box/
 ---
-
+<!-- 添加 flex 容器样式 -->
+  <div class="text-center" style="
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* 重要：设置最小高度 */
+  ">
 <div class="posts">
-  {% assign blog_posts = site.categories.life | sort: 'date' | reverse %}
-{% for post in blog_posts %}
+  {% assign box_posts = site.categories.box | sort: 'date' | reverse %}
+{% for post in box_posts %}
   <article class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">

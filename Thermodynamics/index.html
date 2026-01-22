@@ -2,9 +2,14 @@
 layout: default
 title: Blog
 ---
-
+<!-- 添加 flex 容器样式 -->
+  <div class="text-center" style="
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* 重要：设置最小高度 */
+  ">
 <div class="posts">
-  {% assign blog_posts = site.categories.reading | sort: 'date' | reverse %}
+  {% assign blog_posts = site.categories.Thermodynamics | sort: 'date' | reverse %}
 {% for post in blog_posts %}
   <article class="post">
     <h1 class="post-title">
