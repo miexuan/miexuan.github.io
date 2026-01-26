@@ -3,12 +3,60 @@
  * Styles for managing the structural hierarchy of the site.
  */
 
+/* 基础容器 */
 .container {
-  max-width: 38rem;
-  padding-left:  1.5rem;
-  padding-right: 1.5rem;
-  margin-left:  auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; /* 移动端留白 */
+  box-sizing: border-box;
+}
+
+/* 移动端优先：小屏幕 */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 12px;
+  }
+  
+  /* 小屏幕公式优化 */
+  .MathJax_Display {
+    font-size: 0.95em;
+    margin: 1em 0;
+    padding: 0.5em;
+    overflow-x: scroll;
+  }
+}
+
+/* 平板 */
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    max-width: 95%;
+    padding: 0 20px;
+  }
+}
+
+/* 小桌面 */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 90%;
+    max-width: 900px;
+  }
+}
+
+/* 大桌面 */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 85%;
+    max-width: 1100px;
+  }
+}
+
+/* 超大屏幕 */
+@media (min-width: 1201px) {
+  .container {
+    max-width: 80%;
+    max-width: 1300px;
+  }
 }
 
 .ftr-links a {

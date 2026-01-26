@@ -26,9 +26,35 @@
   MathJax.Hub.Config({
     tex2jax: {
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      inlineMath: [['$','$']]
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: true
     }
   });
 </script>
+
+  <style>
+.MathJax_Display {
+  display: block !important;
+  text-align: center;
+  margin: 1.5em 0;
+}
+  .MathJax_Display {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .MathJax_Display::-webkit-scrollbar {
+  height: 8px;
+  }
+  .MathJax_Display::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  .MathJax_Display::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  </style>
 
 </head>
