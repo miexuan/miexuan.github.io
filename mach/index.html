@@ -9,7 +9,7 @@ title: Blog
     min-height: 100vh;  /* 重要：设置最小高度 */
   ">
 <div class="posts">
-  {% assign blog_posts = site.categories.Thermodynamics | sort: 'date' | reverse %}
+  {% assign blog_posts = site.categories.mach | sort: 'date' | reverse %}
 {% for post in blog_posts %}
   <article class="post">
     <h1 class="post-title">
